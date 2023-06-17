@@ -1,0 +1,27 @@
+Conversor de Divisas v1.00 Beta
+Creado por: Daniel Amores (TheShadow)
+Grupo de Desarrollo: Sinister Software
+Página Web: http://theshadow500.blogspot.com
+
+version 1.00 Beta (12/06/23)
+----------------------------------------------
+
+Errores Conocidos
+- Ninguno
+
+Errores Corregidos
+- Ninguno
+
+Mejoras
+- Optimización del código
+- Implementacion de API para actualización de divisas en tiempo real
+
+Próximas Mejoras Programadas
+- Añadir mas divisas
+
+
+------------------------------------------------------------------------------
+
+Si encuentra algún error o tiene alguna sugerencia, no dude en escribirme a:
+
+			damorescorzo@gmail.com
