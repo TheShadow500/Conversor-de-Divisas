@@ -42,6 +42,7 @@
             lb_Resultado2 = new Label();
             bt_Convertir = new Button();
             bt_About = new Button();
+            bt_ChangeLog = new Button();
             ((System.ComponentModel.ISupportInitialize)pb_Flecha).BeginInit();
             SuspendLayout();
             // 
@@ -189,13 +190,24 @@
             // bt_About
             // 
             bt_About.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            bt_About.Location = new Point(347, 426);
+            bt_About.Location = new Point(338, 426);
             bt_About.Name = "bt_About";
-            bt_About.Size = new Size(75, 23);
+            bt_About.Size = new Size(84, 23);
             bt_About.TabIndex = 15;
             bt_About.Text = "Sobre";
             bt_About.UseVisualStyleBackColor = true;
             bt_About.Click += bt_About_Click;
+            // 
+            // bt_ChangeLog
+            // 
+            bt_ChangeLog.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            bt_ChangeLog.Location = new Point(338, 397);
+            bt_ChangeLog.Name = "bt_ChangeLog";
+            bt_ChangeLog.Size = new Size(84, 23);
+            bt_ChangeLog.TabIndex = 16;
+            bt_ChangeLog.Text = "ChangeLog";
+            bt_ChangeLog.UseVisualStyleBackColor = true;
+            bt_ChangeLog.Click += bt_ChangeLog_Click;
             // 
             // fr_Programa
             // 
@@ -203,6 +215,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CornflowerBlue;
             ClientSize = new Size(434, 461);
+            Controls.Add(bt_ChangeLog);
             Controls.Add(bt_About);
             Controls.Add(bt_Convertir);
             Controls.Add(lb_Resultado2);
@@ -240,5 +253,6 @@
         private Label lb_Resultado2;
         private Button bt_Convertir;
         private Button bt_About;
+        private Button bt_ChangeLog;
     }
 }

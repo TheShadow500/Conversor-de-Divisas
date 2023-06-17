@@ -1,4 +1,5 @@
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 
 namespace Conversor_de_Divisas
 {
@@ -6,7 +7,7 @@ namespace Conversor_de_Divisas
     {
         /* Datos Programa */
         const string titulo = "Conversor de Divisas";
-        const string version = "v1.0";
+        const string version = "v1.0 Beta";
         const string actualizacion = "12/06/2023";
 
         float[] listavalores;
@@ -82,6 +83,18 @@ namespace Conversor_de_Divisas
             {
                 resultado = (float.Parse(tb_Cantidad.Text) * listavalores[cb_Moneda2.SelectedIndex]) / listavalores[cb_Moneda1.SelectedIndex];
                 lb_Resultado2.Text = string.Format("{0:N2}", resultado) + " " + simbolos[cb_Moneda2.SelectedIndex];
+            }
+        }
+
+        private void bt_ChangeLog_Click(object sender, EventArgs e)
+        {
+            if (File.Exists("ChangeLog.txt"))
+            {
+                Process.Start("notepad.exe", "ChangeLog.txt");
+            }
+            else
+            {
+                MessageBox.Show("Archivo ChangeLog.txt no disponible", "ATENCIÓN", MessageBoxButtons.OK);
             }
         }
 

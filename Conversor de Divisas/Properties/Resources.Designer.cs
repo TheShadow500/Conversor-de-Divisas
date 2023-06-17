@@ -61,6 +61,37 @@ namespace Conversor_de_Divisas.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Conversor de Divisas v1.00 Beta
+        ///Creado por: Daniel Amores (TheShadow)
+        ///Grupo de Desarrollo: Sinister Software
+        ///Página Web: http://theshadow500.blogspot.com
+        ///
+        ///version 1.00 Beta (12/06/23)
+        ///----------------------------------------------
+        ///
+        ///Errores Conocidos
+        ///- Ninguno
+        ///
+        ///Errores Corregidos
+        ///- Ninguno
+        ///
+        ///Mejoras
+        ///- Optimización del código
+        ///- Implementacion de API para actualización de divisas en tiempo real
+        ///
+        ///Próximas Mejoras Programadas
+        ///- Añadir mas divisas
+        ///
+        ///
+        ///------------------------------------------- [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string ChangeLog {
+            get {
+                return ResourceManager.GetString("ChangeLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap flecha {
